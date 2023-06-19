@@ -5,13 +5,16 @@ import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 const breedSelect = document.querySelector('#placeholderSingle');
 const loader = document.querySelector('.loader');
 const catInfo = document.querySelector('.cat-info');
+const selectContainer = document.querySelector(".breed-select")
 
 function showLoader() {
   loader.style.display = 'block';
+  selectContainer.style.display = 'none';
 }
 
 function hideLoader() {
   loader.style.display = 'none';
+  selectContainer.style.display = 'block';
 }
 
 function showError() {

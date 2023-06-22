@@ -6,7 +6,8 @@ export function fetchBreeds() {
     headers: {
       'x-api-key': apiKey,
     },
-  }).then(response => response.json());
+  }).then(response => response.json(),
+  );
 }
 
 export function fetchCatByBreed(breedId) {

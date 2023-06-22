@@ -108,5 +108,7 @@ body {
     margin-top: 10px;
     color: beige;
 }
-
+.breed-select {
+  display: none;
+}
 

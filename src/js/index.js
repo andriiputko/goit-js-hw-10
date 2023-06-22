@@ -9,7 +9,7 @@ const selectContainer = document.querySelector(".breed-select")
 
 function showLoader() {
   loader.style.display = 'block';
-  selectContainer.style.display = 'none';
+  // selectContainer.style.display = 'none';
 }
 
 function hideLoader() {
@@ -107,6 +107,7 @@ function handleBreedSelectChange() {
 fetchBreeds()
   .then(breeds => {
     populateBreedSelect(breeds);
+    selectContainer.style.display = 'block'
     hideLoader();
   })
   .catch(error => {
